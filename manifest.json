@@ -8,6 +8,14 @@
     "category": "Administration",
     "versions": [
       {
+        "version": "1.0.1.0",
+        "changelog": "VPN : le plugin demande maintenant à qBittorrent quelles interfaces il voit. Corrige la fausse alerte « qBittorrent sans VPN » quand qBittorrent est isolé avec le VPN dans un réseau séparé.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/monitoring-serveur_1.0.1.0.zip",
+        "checksum": "f3c44fc8526db6c2027bf8b476a1018c",
+        "timestamp": "2026-10-05T18:59:22Z"
+      },
+      {
         "version": "1.0.0.0",
         "changelog": "Première version.",
         "targetAbi": "12.0.0.0",
