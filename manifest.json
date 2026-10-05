@@ -8,6 +8,14 @@
     "category": "Administration",
     "versions": [
       {
+        "version": "1.0.2.0",
+        "changelog": "Santé des disques : l'extension lit maintenant le relevé SMART déposé par une petite tâche système (script installer-releve-smart.sh), sans droits particuliers pour Jellyfin.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/monitoring-serveur_1.0.2.0.zip",
+        "checksum": "00aa09b33a876d853813cda3e2b51caf",
+        "timestamp": "2026-10-05T19:09:33Z"
+      },
+      {
         "version": "1.0.1.0",
         "changelog": "VPN : le plugin demande maintenant à qBittorrent quelles interfaces il voit. Corrige la fausse alerte « qBittorrent sans VPN » quand qBittorrent est isolé avec le VPN dans un réseau séparé.",
         "targetAbi": "12.0.0.0",

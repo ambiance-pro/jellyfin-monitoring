@@ -11,3 +11,13 @@ Dans Jellyfin : Tableau de bord → Extensions → Dépôts → ajouter le dép�
     https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/manifest.json
 
 puis installer « Monitoring serveur » depuis le catalogue et redémarrer Jellyfin.
+
+## Santé des disques (SMART)
+
+Facultatif. Sur le serveur, une fois :
+
+    wget https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/installer-releve-smart.sh
+    sudo sh installer-releve-smart.sh
+
+Une tâche système lit alors la santé des disques toutes les 15 minutes et dépose son relevé dans
+`/var/lib/jellyfin-monitoring/smart`, que l'extension se contente de lire.
