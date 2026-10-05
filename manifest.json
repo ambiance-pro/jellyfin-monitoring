@@ -1,0 +1,20 @@
+[
+  {
+    "guid": "db1826da-2c7d-400a-b675-22b35cefffb0",
+    "name": "Monitoring serveur",
+    "overview": "Surveillance en direct de la machine qui héberge Jellyfin",
+    "description": "Processeur, mémoire, températures et ventilateurs, disques et santé SMART, réseau, NAS et dossiers montés, qBittorrent, VPN et lectures en cours, avec historique sur 24 heures et alertes. Réservé aux administrateurs, en lecture seule. Serveur Linux uniquement.",
+    "owner": "ambiance-pro",
+    "category": "Administration",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "changelog": "Première version.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/monitoring-serveur_1.0.0.0.zip",
+        "checksum": "782612ed79fccf6a5bd1e8eaa2b8968f",
+        "timestamp": "2026-10-05T18:28:47Z"
+      }
+    ]
+  }
+]
