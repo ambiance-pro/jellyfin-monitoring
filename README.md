@@ -12,12 +12,28 @@ Dans Jellyfin : Tableau de bord → Extensions → Dépôts → ajouter le dép�
 
 puis installer « Monitoring serveur » depuis le catalogue et redémarrer Jellyfin.
 
-## Santé des disques (SMART)
+## Relevé système (santé des disques, conteneurs, mises à jour)
 
 Facultatif. Sur le serveur, une fois :
 
-    wget https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/installer-releve-smart.sh
-    sudo sh installer-releve-smart.sh
+    wget https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/installer-releve-serveur.sh
+    sudo sh installer-releve-serveur.sh
 
-Une tâche système lit alors la santé des disques toutes les 15 minutes et dépose son relevé dans
-`/var/lib/jellyfin-monitoring/smart`, que l'extension se contente de lire.
+Une tâche système relève alors toutes les 5 minutes la santé des disques, les conteneurs Docker, les paquets
+à mettre à jour et le dernier passage de maj-serveur, et dépose ces relevés dans `/var/lib/jellyfin-monitoring`,
+que l'extension se contente de lire. Elle remplace l'ancien relevé SMART (installer-releve-smart.sh).
+
+---
+
+# Demandes
+
+Deuxième extension du même dépôt : une page ouverte à tous les comptes Jellyfin, à l'adresse
+`https://ton-serveur/Demandes`, pour chercher un film ou une série (base TMDb) et le demander.
+
+- Chacun voit ce qui est déjà dans Jellyfin, déjà demandé, accepté ou disponible, et peut dire « moi aussi ».
+- L'administrateur reçoit une notification ntfy à chaque demande et répond depuis
+  Tableau de bord → Extensions → Demandes (accepter, refuser avec un message, marquer disponible).
+- La famille peut être prévenue sur son propre sujet ntfy. Un titre arrivé dans la bibliothèque passe tout seul en « Disponible ».
+- Il faut une clé d'API TMDb gratuite (themoviedb.org → Paramètres → API).
+
+L'extension ne télécharge rien : elle tient seulement la liste des demandes.
