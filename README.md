@@ -2,7 +2,9 @@
 
 Extension Jellyfin (12.x, serveur Linux) qui ajoute une page « Monitoring serveur » au tableau de bord :
 processeur, mémoire, températures, disques, réseau, NAS, qBittorrent, VPN et lectures en cours,
-avec un historique sur 24 heures. Page réservée aux administrateurs, en lecture seule.
+avec un historique sur 24 heures et des statistiques d'écoute (qui regarde quoi, quand, sur quel appareil,
+films jamais regardés). Les alertes peuvent aussi être envoyées sur le téléphone par ntfy.
+Page réservée aux administrateurs, en lecture seule.
 
 ## Installation
 
@@ -35,5 +37,9 @@ Deuxième extension du même dépôt : une page ouverte à tous les comptes Jell
   Tableau de bord → Extensions → Demandes (accepter, refuser avec un message, marquer disponible).
 - La famille peut être prévenue sur son propre sujet ntfy. Un titre arrivé dans la bibliothèque passe tout seul en « Disponible ».
 - Il faut une clé d'API TMDb gratuite (themoviedb.org → Paramètres → API).
+
+- Pour les séries, on peut demander toute la série ou seulement certaines saisons.
+- Chacun peut activer ses propres notifications ntfy depuis la page.
+- Chaque dimanche, les nouveautés de la semaine peuvent être envoyées à la famille.
 
 L'extension ne télécharge rien : elle tient seulement la liste des demandes.

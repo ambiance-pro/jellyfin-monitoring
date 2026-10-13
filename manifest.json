@@ -3,10 +3,18 @@
     "guid": "db1826da-2c7d-400a-b675-22b35cefffb0",
     "name": "Monitoring serveur",
     "overview": "Surveillance en direct de la machine qui héberge Jellyfin",
-    "description": "Processeur, mémoire, températures et ventilateurs, disques et santé SMART, réseau, NAS, qBittorrent et VPN, lectures en cours, et tout le serveur autour : services, sauvegardes, Tailscale, certificats HTTPS, nom de domaine, mises à jour et conteneurs Docker. Historique sur 24 heures et alertes. Réservé aux administrateurs, en lecture seule. Serveur Linux uniquement.",
+    "description": "Processeur, mémoire, températures et ventilateurs, disques et santé SMART, réseau, NAS, qBittorrent et VPN, lectures en cours, et tout le serveur autour : services, sauvegardes, Tailscale, certificats HTTPS, nom de domaine, mises à jour et conteneurs Docker. Historique sur 24 heures, statistiques d'écoute et alertes, aussi envoyées sur le téléphone par ntfy. Réservé aux administrateurs, en lecture seule. Serveur Linux uniquement.",
     "owner": "ambiance-pro",
     "category": "Administration",
     "versions": [
+      {
+        "version": "1.2.0.0",
+        "changelog": "Nouvel onglet Statistiques : temps regardé par jour et par compte, titres les plus regardés, heures de visionnage, applications et appareils, dernières lectures, films que personne n'a regardés. Les alertes peuvent maintenant être envoyées sur le téléphone par ntfy (envoi seulement si l'alerte dure, rappel, retour à la normale).",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/monitoring-serveur_1.2.0.0.zip",
+        "checksum": "61fdc31bd4c29b8bba6ee2e34e1faa11",
+        "timestamp": "2026-10-13T15:21:05Z"
+      },
       {
         "version": "1.1.0.0",
         "changelog": "Nouvel onglet Services : état de chaque service, sonde de santé, sauvegardes et tâches planifiées, Tailscale, certificats HTTPS, nom de domaine, mises à jour, redémarrage, dernier passage de maj-serveur et conteneurs Docker. Résumé en tête de la vue d'ensemble. Nouveau relevé système (installer-releve-serveur.sh) qui remplace le relevé SMART.",
@@ -49,6 +57,14 @@
     "owner": "ambiance-pro",
     "category": "General",
     "versions": [
+      {
+        "version": "1.1.0.0",
+        "changelog": "Les titres arrivés dans la bibliothèque passent seuls en « Disponible » (tâche planifiée toutes les 15 minutes). Choix des saisons pour les séries. Chacun peut être prévenu sur son téléphone (sujet ntfy personnel). Limite de demandes par semaine. Nouveautés de la semaine envoyées à la famille le dimanche.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/ambiance-pro/jellyfin-monitoring/main/demandes_1.1.0.0.zip",
+        "checksum": "178acd64548f0b4db571a5ae7a64e5a1",
+        "timestamp": "2026-10-13T15:21:05Z"
+      },
       {
         "version": "1.0.0.0",
         "changelog": "Première version : recherche TMDb, demandes, « moi aussi », suivi des demandes, notifications ntfy pour l'administrateur et la famille, page d'administration avec réglages.",
